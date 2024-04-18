@@ -4,5 +4,6 @@ export default function Greet({name}){
       <View>
          <Text>Hello {name}</Text>
       </View>
+      
    )
 }

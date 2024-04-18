@@ -12,23 +12,16 @@ import {
   ActivityIndicator,
   Alert,
 } from "react-native";
-import Cart from "./Components/Cart";
-import Greet from "./Components/Greet";
+import Cart from "./Components/Core-Components/Cart";
+import Greet from "./Components/Core-Components/Greet";
+import StyleSheetAPI from "./Components/styleSheetAPI/StyleSheetAPI";
 const logoImage = require("./assets/adaptive-icon.png");
 export default function App() {
   const [count, setCount]=useState(0)
   const [isModalVisible, setIsModalVisible] = useState(false);
   return (
-    <View style={{ flex: 1, backgroundColor: "plum", padding: 60 }}>
-      <Greet name='Vargas'/>
-      <Greet name='Obed'/>
-      <View>
-        <Cart count={count}/>
-        <Button title="Increment Cart" onPress={()=>setCount(count+1)} />
-        <Button title="Decrement Cart" onPress={()=>count>0 && setCount(count-1)} />
-        <Button title="Reset Cart" onPress={()=>setCount(0)} />
-      </View>
-    </View>
+
+    <StyleSheetAPI/>
   );
 }
 
@@ -81,3 +74,14 @@ presentationStyle="pageSheet"
 </View>
 </Modal> */
 }
+
+    // <View style={{ flex: 1, backgroundColor: "plum", padding: 60 }}>
+    //   <Greet name='Vargas'/>
+    //   <Greet name='Obed'/>
+    //   <View>
+    //     <Cart count={count}/>
+    //     <Button title="Increment Cart" onPress={()=>setCount(count+1)}  />
+    //     <Button title="Decrement Cart" onPress={()=>count>0 && setCount(count-1)} />
+    //     <Button title="Reset Cart" onPress={()=>setCount(0)} />
+    //   </View>
+    // </View>
