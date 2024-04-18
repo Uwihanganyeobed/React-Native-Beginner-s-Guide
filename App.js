@@ -19,33 +19,7 @@ export default function App() {
   return (
     <View style={{ flex: 1, backgroundColor: "plum", padding: 60 }}>
       <Greet name='Vargas'/>
-      <Greet name='Obz'/>
-      {/* <Button title="Alert" onPress={() => Alert.alert("Invalid data!")} />
-      <Button
-        title="Alert2"
-        onPress={() => Alert.alert("Invalid data!", "DOB Incorect")}
-      />
-       <Button
-        title="Alert3"
-        onPress={() => Alert.alert("Invalid data!", "DOB Incorect",[
-          {
-            text: 'Cancel',
-            onPress: ()=>alert('Cancel Pressed')
-          },
-          {
-            text: 'OK',
-            onPress: ()=>alert('OK Pressed')
-          }
-        ])}
-      /> */}
-      {/* <ActivityIndicator  />
-      <ActivityIndicator size="large" />
-      <ActivityIndicator size="large"color="midnightblue" />
-      <ActivityIndicator size="large"color="midnightblue"animating={false} /> */}
-      {/* <StatusBar backgroundColor="#ccc"
-       barStyle="dark-content"
-        // hidden
-     /> */}
+      <Greet name='Obed'/>
     </View>
   );
 }
