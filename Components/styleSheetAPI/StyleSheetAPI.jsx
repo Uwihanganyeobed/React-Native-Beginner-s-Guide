@@ -3,9 +3,9 @@ export default function StyleSheetAPI(){
   return (
     <View style={styles.container}>
       <View>
-      <Text style= {[ styles.Box,styles.lightblueBox]}>Light Blue API</Text>
+      <Text style= {[ styles.Box,styles.lightblueBox, styles.boxShadow]}>Light Blue API</Text>
       </View>
-      <Text style= {[styles.Box,styles.lightgreenBox]}>Light Green API</Text>
+      <Text style= {[styles.Box,styles.lightgreenBox, styles.androidShadow]}>Light Green API</Text>
     </View>
   )
 }
@@ -14,8 +14,8 @@ const styles=StyleSheet.create({
    container: {flex: 1, backgroundColor: "plum", padding: 60},
    title: {color: 'green', fontWeight: 'bold'},
    Box: {
-      width: 100,
-      height: 100,
+      width: 250,
+      height: 250,
       // padding: 10,
       paddingHorizontal: 10,
       paddingVertical: 10,
@@ -29,5 +29,17 @@ const styles=StyleSheet.create({
    },
    lightgreenBox: {
       backgroundColor: "lightgreen",
+   },
+   boxShadow: {
+      shadowColor: "#333333",
+      shadowOffset: {
+         width: 6,
+         height: 6
+      },
+      shadowOpacity: 0.6,
+      shadowRadius: 4
+   },
+   androidShadow: {
+      elevation: 10
    }
 })
