@@ -12,7 +12,8 @@ import {
   ActivityIndicator,
   Alert,
   StyleSheet,
-  SafeAreaView
+  SafeAreaView,
+  Platform
 } from "react-native";
 import Cart from "./Components/Core-Components/Cart";
 import Box from "./Components/RNLayout/Box";
@@ -20,6 +21,7 @@ import Greet from "./Components/Core-Components/Greet";
 import StyleSheetAPI from "./Components/styleSheetAPI/StyleSheetAPI";
 import UIDynamic from "./Components/DynamicUI/UIDynamic";
 import UIWindow from "./Components/DynamicUI/UIWindow";
+import CustomButton from "./Components/DynamicUI/customButton/customButton.android";
 const logoImage = require("./assets/adaptive-icon.png");
 export default function App() {
   const [count, setCount]=useState(0)
@@ -29,7 +31,9 @@ export default function App() {
     <View style={{backgroundColor: 'plum', flex: 1}}>
     {/* <StyleSheetAPI/> */}
     {/* <UIDynamic/> */}
-    <UIWindow/>
+    {/* <UIWindow/> */}
+    <CustomButton title="press me"onPress={()=>alert('pressed')}/>
+
     </View>
     </SafeAreaView>
 

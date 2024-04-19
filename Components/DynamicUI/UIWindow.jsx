@@ -1,4 +1,4 @@
-import { View, Text, StyleSheet,useWindowDimensions } from "react-native";
+import { View, Text, StyleSheet,useWindowDimensions,Platform } from "react-native";
 export default function UIWindow(){
    const windowWidth=useWindowDimensions().width
    const windowHeight=useWindowDimensions().height
@@ -22,7 +22,9 @@ const styles=StyleSheet.create({
       backgroundColor: 'plum',
       alignItems: 'center',
       justifyContent: 'flex-start',
-      marginTop: 200
+      marginTop: 200,
+      paddingTop: Platform.OS === 'android'?25 : 0
+
    },
    box:{
       // height: windowWidth>500? '70%': '90%',
@@ -31,8 +33,20 @@ const styles=StyleSheet.create({
       alignItems: 'center',
       justifyContent: 'center'
    },
-   // text:{
-   //    fontSize: windowWidth>500? 50:24
-   // }
+   text:{
+      ...Platform.select({
+         ios: {
+            color: 'purple',
+            fontSize: 24,
+            fontStyle: 'italic'
+         },
+         android: {
+            color: 'blue',
+            fontSize: 30
+         }
+      }),
+      fontWeight: 'bold',
+      textAlign: 'center',
+   }
 })
 
