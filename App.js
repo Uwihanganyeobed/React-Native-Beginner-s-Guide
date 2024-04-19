@@ -35,7 +35,6 @@ export default function App() {
     <CustomButton title="press me"onPress={()=>alert('pressed')}/>
     </View>
     </SafeAreaView>
-
   );
 }
 const styles=StyleSheet.create({
@@ -60,9 +59,6 @@ const styles=StyleSheet.create({
     // borderColor: 'lightblue'
   }
 })
-
-
-
 
 {
   /* <ScrollView>
