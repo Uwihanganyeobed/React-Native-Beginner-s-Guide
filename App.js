@@ -17,40 +17,33 @@ import Cart from "./Components/Core-Components/Cart";
 import Box from "./Components/RNLayout/Box";
 import Greet from "./Components/Core-Components/Greet";
 import StyleSheetAPI from "./Components/styleSheetAPI/StyleSheetAPI";
+import UIDynamic from "./Components/DynamicUI/UIDynamic";
 const logoImage = require("./assets/adaptive-icon.png");
 export default function App() {
   const [count, setCount]=useState(0)
   const [isModalVisible, setIsModalVisible] = useState(false);
   return (
-    // <View style={{backgroundColor: 'plum', flex: 1}}></View>
-    <View style={styles.container}>
-    <Box style={{backgroundColor: 'red',flexShrink: 1}}>Box 1 shrink</Box>
-    <Box style={{backgroundColor: 'orange', flexShrink: 2}}>Box 2 shrink</Box>
-    {/* <Box style={{backgroundColor: 'yellow'}}>Box 3</Box>
-    <Box style={{backgroundColor: 'green'}}>Box 4</Box>
-    <Box style={{backgroundColor: 'blue'}}>Box 5</Box>
-    <Box style={{backgroundColor: 'indigo'}}>Box 6</Box>
-    <Box style={{backgroundColor: 'violet'}}>Box 7</Box>
-    <Box style={{backgroundColor: 'orangered'}}>Box 8</Box> */}
+    <View style={{backgroundColor: 'plum', flex: 1}}>
+    {/* <StyleSheetAPI/> */}
+    <UIDynamic/>
     </View>
-    // <StyleSheetAPI/>
   );
 }
 const styles=StyleSheet.create({
   container: {
     // flex: 1,
-    height: 300,
-    width: 300,
-    // flexWrap: 'wrap',
-    // rowGap: 20,
-    // columnGap: 30,
-    // gap: 20,
-    // alignContent: 'space-around' ,
-    marginTop: 30,
-    borderWidth: 6,
-    flexDirection: 'row',
-    // justifyContent: "flex-end",
-    alignItems: 'flex-start',
+    // // height: 300,
+    // // flexGrow: 1,
+    // // flexWrap: 'wrap',
+    // // rowGap: 20,
+    // // columnGap: 30,
+    // // gap: 20,
+    // // alignContent: 'space-around' ,
+    // marginTop: 30,
+    // borderWidth: 6,
+    // // flexDirection: 'row',
+    // // justifyContent: "flex-end",
+    // // alignItems: 'baseline',
     // borderColor: 'lightblue'
   }
 })
