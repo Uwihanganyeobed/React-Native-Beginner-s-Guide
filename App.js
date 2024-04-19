@@ -33,7 +33,6 @@ export default function App() {
     {/* <UIDynamic/> */}
     {/* <UIWindow/> */}
     <CustomButton title="press me"onPress={()=>alert('pressed')}/>
-
     </View>
     </SafeAreaView>
 
