@@ -24,11 +24,11 @@ export default function App() {
   return (
     // <View style={{backgroundColor: 'plum', flex: 1}}></View>
     <View style={styles.container}>
-    <Box style={{backgroundColor: 'red', alignSelf: 'flex-start'}}>Box 1</Box>
-    <Box style={{backgroundColor: 'orange', alignSelf: 'flex-end'}}>Box 2</Box>
-    <Box style={{backgroundColor: 'yellow',alignSelf: 'center'}}>Box 3</Box>
-    <Box style={{backgroundColor: 'green', alignSelf: 'stretch'}}>Box 4</Box>
-    <Box style={{backgroundColor: 'blue', alignSelf: 'auto'}}>Box 5</Box>
+    <Box style={{backgroundColor: 'red',}}>Box 1</Box>
+    <Box style={{backgroundColor: 'orange'}}>Box 2</Box>
+    <Box style={{backgroundColor: 'yellow'}}>Box 3</Box>
+    <Box style={{backgroundColor: 'green'}}>Box 4</Box>
+    <Box style={{backgroundColor: 'blue'}}>Box 5</Box>
     <Box style={{backgroundColor: 'indigo'}}>Box 6</Box>
     <Box style={{backgroundColor: 'violet'}}>Box 7</Box>
     <Box style={{backgroundColor: 'orangered'}}>Box 8</Box>
@@ -39,12 +39,15 @@ export default function App() {
 const styles=StyleSheet.create({
   container: {
     flex: 1,
+    height: 300,
+    flexWrap: 'wrap-reverse',
     marginTop: 30,
-    // flexDirection: 'row',
-    // justifyContent: "flex-end",
     borderWidth: 6,
-    alignItems: 'flex-end',
-    borderColor: 'lightblue'
+
+    flexDirection: 'row',
+    // justifyContent: "flex-end",
+    // alignItems: 'baseline',
+    // borderColor: 'lightblue'
   }
 })
 
