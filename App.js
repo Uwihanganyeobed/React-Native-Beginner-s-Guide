@@ -11,7 +11,8 @@ import {
   StatusBar,
   ActivityIndicator,
   Alert,
-  StyleSheet
+  StyleSheet,
+  SafeAreaView
 } from "react-native";
 import Cart from "./Components/Core-Components/Cart";
 import Box from "./Components/RNLayout/Box";
@@ -24,16 +25,23 @@ export default function App() {
   const [count, setCount]=useState(0)
   const [isModalVisible, setIsModalVisible] = useState(false);
   return (
+    <SafeAreaView style={styles.safeContainer}>
     <View style={{backgroundColor: 'plum', flex: 1}}>
     {/* <StyleSheetAPI/> */}
     {/* <UIDynamic/> */}
     <UIWindow/>
     </View>
+    </SafeAreaView>
+
   );
 }
 const styles=StyleSheet.create({
+  safeContainer: {
+    flex: 1,
+    backgroundColor: 'plum'
+  },
   container: {
-    // flex: 1,
+    flex: 1,
     // // height: 300,
     // // flexGrow: 1,
     // // flexWrap: 'wrap',
