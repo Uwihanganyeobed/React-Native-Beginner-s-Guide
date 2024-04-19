@@ -11,8 +11,10 @@ import {
   StatusBar,
   ActivityIndicator,
   Alert,
+  StyleSheet
 } from "react-native";
 import Cart from "./Components/Core-Components/Cart";
+import Box from "./Components/RNLayout/Box";
 import Greet from "./Components/Core-Components/Greet";
 import StyleSheetAPI from "./Components/styleSheetAPI/StyleSheetAPI";
 const logoImage = require("./assets/adaptive-icon.png");
@@ -20,10 +22,31 @@ export default function App() {
   const [count, setCount]=useState(0)
   const [isModalVisible, setIsModalVisible] = useState(false);
   return (
-
-    <StyleSheetAPI/>
+    // <View style={{backgroundColor: 'plum', flex: 1}}></View>
+    <View style={styles.container}>
+    <Box style={{backgroundColor: 'red', flex: 1}}>Box 1</Box>
+    <Box style={{backgroundColor: 'orange', flex: 3}}>Box 2</Box>
+    <Box style={{backgroundColor: 'yellow'}}>Box 3</Box>
+    <Box style={{backgroundColor: 'green'}}>Box 4</Box>
+    <Box style={{backgroundColor: 'blue'}}>Box 5</Box>
+    <Box style={{backgroundColor: 'indigo'}}>Box 6</Box>
+    <Box style={{backgroundColor: 'violet'}}>Box 7</Box>
+    <Box style={{backgroundColor: 'orangered'}}>Box 8</Box>
+    </View>
+    // <StyleSheetAPI/>
   );
 }
+const styles=StyleSheet.create({
+  container: {
+    flex: 1,
+    marginTop: 30,
+    borderWidth: 6,
+    borderColor: 'lightblue'
+  }
+})
+
+
+
 
 {
   /* <ScrollView>
