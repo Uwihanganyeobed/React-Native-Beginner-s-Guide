@@ -18,6 +18,7 @@ import Box from "./Components/RNLayout/Box";
 import Greet from "./Components/Core-Components/Greet";
 import StyleSheetAPI from "./Components/styleSheetAPI/StyleSheetAPI";
 import UIDynamic from "./Components/DynamicUI/UIDynamic";
+import UIWindow from "./Components/DynamicUI/UIWindow";
 const logoImage = require("./assets/adaptive-icon.png");
 export default function App() {
   const [count, setCount]=useState(0)
@@ -25,7 +26,8 @@ export default function App() {
   return (
     <View style={{backgroundColor: 'plum', flex: 1}}>
     {/* <StyleSheetAPI/> */}
-    <UIDynamic/>
+    {/* <UIDynamic/> */}
+    <UIWindow/>
     </View>
   );
 }
