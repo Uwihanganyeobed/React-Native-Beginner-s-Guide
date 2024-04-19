@@ -38,13 +38,13 @@ export default function App() {
 }
 const styles=StyleSheet.create({
   container: {
-    flex: 1,
+    // flex: 1,
     height: 300,
-    flexWrap: 'wrap-reverse',
+    flexWrap: 'wrap',
+    alignContent: 'space-around' ,
     marginTop: 30,
     borderWidth: 6,
-
-    flexDirection: 'row',
+    // flexDirection: 'row',
     // justifyContent: "flex-end",
     // alignItems: 'baseline',
     // borderColor: 'lightblue'
