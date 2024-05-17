@@ -1,7 +1,7 @@
 import React from 'react'
 import { Pressable,Text } from 'react-native'
 
-const customButton = ({onPress, title}) => {
+const CustomButton = ({onPress, title}) => {
   return (
     <Pressable
     onPress={onPress}
@@ -17,4 +17,4 @@ const customButton = ({onPress, title}) => {
   )
 }
 
-export default customButton;
+export default CustomButton;

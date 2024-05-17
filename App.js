@@ -21,7 +21,7 @@ import Greet from "./Components/Core-Components/Greet";
 import StyleSheetAPI from "./Components/styleSheetAPI/StyleSheetAPI";
 import UIDynamic from "./Components/DynamicUI/UIDynamic";
 import UIWindow from "./Components/DynamicUI/UIWindow";
-import CustomButton from "./Components/DynamicUI/customButton/customButton.android";
+import CustomButton from "./Components/DynamicUI/customButton/CustomButton";
 const logoImage = require("./assets/adaptive-icon.png");
 export default function App() {
   const [count, setCount]=useState(0)
@@ -32,7 +32,7 @@ export default function App() {
     {/* <StyleSheetAPI/> */}
     {/* <UIDynamic/> */}
     {/* <UIWindow/> */}
-    <CustomButton title="press me"onPress={()=>alert('pressed')}/>
+    {/* <CustomButton title="press me"onPress={()=>alert('pressed')}/> */}
     </View>
     </SafeAreaView>
   );
